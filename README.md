@@ -32,7 +32,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 This application allows users to control a Brushed DC Motor over Bluetooth® Low Energy (BLE) using the PIC32-BZ6 Curiosity Board. The motor’s on/off state and speed can be controlled through a mobile app, while the velocity is continuously reported back to the app.
 
-![](Docs/Hardware_setup.png)
+![](Docs/Hardware_Setup.png)
 
 ## 2. Bill of materials<a name="step2">
 
@@ -98,22 +98,22 @@ This application allows users to control a Brushed DC Motor over Bluetooth® Low
 
 - Ensure the configuration of Customized Service is as below.
 
-![](Docs/Customized Service.png)
-![](Docs/Customized Service 1.png)
-![](Docs/Customized Service 2.png)
+![](Docs/CustomizedService.png)
+![](Docs/CustomizedService1.png)
+![](Docs/CustomizedService2.png)
 
 - Ensure the configuration of BLE Stack is as below.
 
-![](Docs/BLE Stack 1.png)
-![](Docs/BLE Stack 2.png)
-![](Docs/BLE Stack 3.png)
-![](Docs/BLE Stack 4.png)
-![](Docs/BLE Stack 5.png)
+![](Docs/BLEStack1.png)
+![](Docs/BLEStack2.png)
+![](Docs/BLEStack3.png)
+![](Docs/BLEStack4.png)
+![](Docs/BLEStack5.png)
 
 - Ensure the configuration of FreeRTOS is as below. Total heap size should be 61440.
 
-![](Docs/FreeRTOS 1.png)
-![](Docs/FreeRTOS 2.png)
+![](Docs/FreeRTOS1.png)
+![](Docs/FreeRTOS2.png)
 
 - From Device Resources, go to Libraries->Harmony->System Services and add CONSOLE. Ensure the below configuration.
 
@@ -121,15 +121,19 @@ This application allows users to control a Brushed DC Motor over Bluetooth® Low
 
 - Right Click on SYS_CONSOLE of CONSOLE and add SERCOM0 as below. Ensure the configurations.
 
-![](Docs/Sercom0.png)
+![](Docs/SERCOM0.png)
 
 - In Device resources, go to Harmony->Peripherals->EIC and select EIC. Ensure the configurations.
 
-![](Docs/EIC.PNG)
+![](Docs/EIC.png)
 
 - In Device resources, go to Harmony->Peripherals->QEI and select QEI. Ensure the configurations.
 
-![](Docs/QEI.PNG)
+![](Docs/QEI.png)
+
+- In Device resources, go to Harmony->Peripherals->TCC and select TCC1. Ensure the configurations.
+
+![](Docs/TCC1.png)
 
 **Step 4** - [Generate](https://onlinedocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-1/index.html?GUID-9C28F407-4879-4174-9963-2CF34161398E) the code.
 
